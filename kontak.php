@@ -1,44 +1,31 @@
 <?php
-// Menampilkan semua error (debug)
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
-// Import PHPMailer
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-// Include file PHPMailer
 require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
-// Proses kirim email kalau form disubmit
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nama = $_POST["nama"];
     $email = $_POST["email"];
     $pesan = $_POST["pesan"];
 
     $mail = new PHPMailer(true);
-
     try {
-        // SMTP setup
         $mail->isSMTP();
-        $mail->Host       = 'smtp.gmail.com';
-        $mail->SMTPAuth   = true;
-        $mail->Username   = 'nicetryhime@gmail.com';       // GANTI
-        $mail->Password   = 'golaivdkbyaftevh';    // GANTI
+        $mail->Host = 'smtp.gmail.com';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'nicetryhime@gmail.com';
+        $mail->Password = 'golaivdkbyaftevh';
         $mail->SMTPSecure = 'tls';
-        $mail->Port       = 587;
+        $mail->Port = 587;
 
-        // Email pengirim & penerima
-        $mail->setFrom($email, $nama); // dari pengunjung
-        $mail->addAddress('nicetryhime@gmail.com'); // ke kamu
-
-        // Isi email
+        $mail->setFrom($email, $nama);
+        $mail->addAddress('nicetryhime@gmail.com');
         $mail->Subject = 'Pesan dari Website MBC Lab';
-        $mail->Body    = "Nama: $nama\nEmail: $email\n\nPesan:\n$pesan";
+        $mail->Body = "Nama: $nama\nEmail: $email\n\nPesan:\n$pesan";
 
-        // Kirim
         $mail->send();
         echo "<script>alert('Pesan berhasil dikirim!');</script>";
     } catch (Exception $e) {
@@ -48,29 +35,44 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <title>Kontak MBC Lab</title>
-    <!-- Tambahkan Tailwind CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <title>Kontak MBC Lab</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
 </head>
-<body>
-   <body class="bg-gray-100 flex items-center justify-center min-h-screen">
-    <form method="post" action="" class="bg-white p-8 rounded-xl shadow-md w-full max-w-md">
-        <h1 class="text-2xl font-bold mb-6 text-center text-blue-600">Form Kontak</h1>
-        <label class="block mb-2 font-semibold">Nama:</label>
-        <input type="text" name="nama" required class="w-full mb-4 px-4 py-2 border rounded-md">
+<body class="bg-gradient-to-br from-indigo-100 to-blue-200 min-h-screen">
+  <div class="flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <form method="post" action="" class="bg-white p-8 rounded-2xl shadow-2xl w-full max-w-md">
+      <h1 class="text-3xl font-bold mb-6 text-center text-indigo-700">Hubungi Kami</h1>
+      <label class="block mb-2 font-semibold">Nama:</label>
+      <input type="text" name="nama" required class="w-full mb-4 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
 
-        <label class="block mb-2 font-semibold">Email:</label>
-        <input type="email" name="email" required class="w-full mb-4 px-4 py-2 border rounded-md">
+      <label class="block mb-2 font-semibold">Email:</label>
+      <input type="email" name="email" required class="w-full mb-4 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
 
-        <label class="block mb-2 font-semibold">Pesan:</label>
-        <textarea name="pesan" required class="w-full mb-4 px-4 py-2 border rounded-md"></textarea>
+      <label class="block mb-2 font-semibold">Pesan:</label>
+      <textarea name="pesan" required class="w-full mb-4 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
 
-        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md">
-            Kirim
-        </button>
+      <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded-md transition duration-200">
+        Kirim Pesan
+      </button>
     </form>
+
+    <div class="mt-10 bg-white p-6 rounded-2xl shadow-md w-full max-w-md">
+      <h2 class="text-xl font-bold text-indigo-800 mb-2">Informasi Kontak</h2>
+      <p class="text-gray-800 mb-1">Alamat: Jalan Telekomunikasi No. 1, Terusan Buah Batu, Bandung</p>
+      <p class="text-gray-800 mb-1">Ruangan: TULT 13.04 & TULT 11.12</p>
+      <p class="text-gray-800 mb-1">Line: <span class="text-green-700 font-semibold">@sok8073r</span></p>
+      <p class="text-indigo-600 font-semibold"><a href="https://maps.app.goo.gl/jqiSuAbK6QLnBmqs8" target="_blank">📍 Lihat Lokasi di Google Maps</a></p>
+      <p class="mt-2 text-sm text-indigo-400 font-semibold">#WeAttackWeProtect</p>
+    </div>
+  </div>
 </body>
 </html>
