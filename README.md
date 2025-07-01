@@ -1,45 +1,68 @@
-# Landing Page MBC Laboratory 🌐
+# 🌐 Landing Page MBC Laboratory
 
-Landing page ini dikembangkan untuk MBC Laboratory sebagai representasi digital dari layanan dan kapabilitas di bidang:
-- Cybersecurity 🛡️
-- Big Data Analytics 📊
-- Game Technology 🎮
-- Geographic Information Systems (GIS) 🗺️
+Halo! Ini adalah proyek landing page yang saya buat untuk MBC Laboratory — sebuah pusat riset dan konsultan yang bergerak di bidang:
+- Cybersecurity
+- Big Data Analytics
+- Game Technology
+- Geographic Information Systems (GIS)
 
-## 📌 Struktur Halaman
-- `index.html` → Halaman utama (visi misi, pengantar)
-- `layanan.html` → Penjelasan tiap divisi
-- `kontak.php` → Form kontak + backend pengiriman email (PHPMailer)
-- `developer.html` → Informasi developer/pengembang
-- `PHPMailer/` → Library untuk mengirim email lewat form kontak
-
-## 💡 Fitur
-- Desain modern dan mobile responsive (CSS + JS)
-- Form kontak dinamis (PHP + PHPMailer)
-- Sertifikasi SSL melalui platform deployment (Vercel/Netlify)
-- Backend ringan, bisa pakai XAMPP/Apache lokal
-
-## 🛠️ Cara Menjalankan Secara Lokal
-1. Clone repo atau download ZIP
-2. Simpan ke folder `htdocs` di XAMPP
-3. Jalankan `localhost/nama-folder/` di browser
-4. Pastikan `Apache` aktif di XAMPP
-
-## ✉️ Form Kontak
-- Dibuat menggunakan **PHP + PHPMailer**
-- Email akan terkirim ke alamat developer
-- **Catatan:** Konfigurasi SMTP perlu disesuaikan jika diganti hosting/email
-
-## 🔐 Keamanan
-- Penggunaan SSL (via deploy platform)
-- Konfigurasi dasar pengamanan input form
-
-## 👨‍💻 Developer
-Nama: Reysya Andika Triputra Priatna 
-Email: reysyaandikatp16@gmail.com
-GitHub: [Link GitHub kamu]  
-Portofolio: [Opsional]
+Tujuan dari website ini adalah untuk memperkenalkan profil, layanan, serta tim pengembang dari MBC Lab secara digital dan profesional.
 
 ---
 
-> Website ini dikembangkan sebagai bagian dari proyek tugas/desain sistem untuk representasi profesional MBC Lab.
+## 🧱 Struktur Halaman Website
+
+Website ini terdiri dari beberapa halaman utama:
+- `index.html`: Halaman depan (visi, misi, pengantar)
+- `layanan.html`: Penjelasan empat divisi utama
+- `kontak.php`: Formulir kontak yang terhubung ke email via PHPMailer
+- `developer.html`: Profil singkat developer
+
+---
+
+## ⚙️ Teknologi yang Digunakan
+
+Frontend:
+- HTML5, CSS3
+- Sedikit JavaScript untuk interaktivitas
+- Desain responsif
+
+Backend:
+- PHP sederhana untuk proses form kontak
+- PHPMailer untuk pengiriman email via SMTP
+
+---
+
+## 🚀 Cara Menjalankan Secara Lokal
+
+1. Install [XAMPP](https://www.apachefriends.org/) dan aktifkan Apache
+2. Simpan folder proyek ke `htdocs`
+3. Akses melalui browser di `http://localhost/nama-folder/`
+4. Form kontak bisa langsung dicoba (jika sudah dikonfigurasi)
+
+---
+
+## 🔐 Keamanan
+
+- Website ini nantinya akan di-deploy ke platform cloud (seperti Netlify atau Vercel) dengan dukungan HTTPS
+- Untuk simulasi IDS (opsional), disiapkan konfigurasi dummy menggunakan Snort/Wazuh
+
+---
+
+## 📬 Form Kontak
+
+Form ini sudah menggunakan PHPMailer dan bisa mengirim email ke alamat yang telah dikonfigurasi. Kamu bisa menyesuaikan SMTP sesuai kebutuhan.
+
+---
+
+## 👨‍💻 Tentang Developer
+
+Halo, saya Reysya Andika Triputra Priatna, pengembang dari proyek ini.  
+Saat ini saya sedang mendalami pengembangan web dan tertarik di bidang teknologi informasi dan keamanan siber.
+
+- 📧 Email: reysyaandikatp16@gmail.com
+- 🔗 GitHub: https://github.com/rey16pixel
+
+---
+
+> Terima kasih sudah melihat proyek ini! Semoga bisa bermanfaat dan menjadi representasi digital yang baik untuk MBC Laboratory.
