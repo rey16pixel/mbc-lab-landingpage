@@ -2,41 +2,69 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MBC Laboratory - Home</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beranda - MBC Laboratory</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
 </head>
-<body>
-  <header>
-    <h1>Selamat Datang di MBC Laboratory</h1>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="layanan.html">Layanan</a> |
-      <a href="kontak.php">Kontak</a> |
-      <a href="developer.html">Developer</a>
-    </nav>
+<body class="bg-gradient-to-b from-blue-100 via-white to-purple-100 min-h-screen">
+  <!-- Header -->
+  <header class="bg-white shadow p-6 sticky top-0 z-10">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-700">MBC Laboratory</h1>
+      <nav class="space-x-6 text-sm text-gray-700">
+        <a href="index.html" class="hover:text-blue-600">Beranda</a>
+        <a href="divisi.html" class="hover:text-blue-600">Divisi</a>
+        <a href="kontak.php" class="hover:text-blue-600">Kontak</a>
+        <a href="developer.html" class="hover:text-blue-600">Developer</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>Profil Singkat</h2>
-      <p>MBC Laboratory adalah pusat riset dan pengembangan solusi teknologi di bidang Cybersecurity, Big Data, Game Technology, dan Geographic Information Systems (GIS).</p>
-    </section>
+  <!-- Hero Section -->
+  <section class="text-center py-20 bg-gradient-to-r from-blue-200 to-purple-200">
+    <h2 class="text-4xl font-bold text-blue-900 mb-4">#WeAttackWeProtect</h2>
+    <p class="text-lg text-gray-700 max-w-xl mx-auto">Selamat datang di MBC Laboratory, pusat riset dan pengembangan teknologi di bidang Cybersecurity, Big Data, Game Technology, dan GIS.</p>
+  </section>
 
-    <section>
-      <h2>Visi</h2>
-      <p>Menjadi laboratorium teknologi terpercaya yang mendorong inovasi dan keamanan digital.</p>
-      <h2>Misi</h2>
-      <ul>
-        <li>Mengembangkan solusi inovatif di bidang teknologi.</li>
-        <li>Meningkatkan kesadaran keamanan digital masyarakat.</li>
-        <li>Menghubungkan teknologi dengan kebutuhan industri.</li>
-      </ul>
-    </section>
-  </main>
+  <!-- Tentang -->
+  <section class="py-12 px-4 lg:px-20">
+    <div class="text-center mb-10">
+      <h3 class="text-3xl font-semibold text-gray-800 mb-4">Tentang Kami</h3>
+      <p class="text-gray-600 max-w-2xl mx-auto">MBC Laboratory adalah pusat riset teknologi dan konsultan yang bertujuan menjadi solusi terdepan di era digital. Kami mempersembahkan inovasi, keamanan, dan efisiensi untuk berbagai sektor industri.</p>
+    </div>
+  </section>
 
-  <footer>
-    <p>&copy; 2025 MBC Laboratory</p>
+  <!-- Layanan Singkat -->
+  <section class="bg-white py-12 px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="bg-blue-50 rounded-lg p-6 shadow hover:shadow-lg transition">
+        <h4 class="text-xl font-bold text-blue-700 mb-2">Cybersecurity</h4>
+        <p class="text-sm text-gray-600">Solusi proteksi data, audit keamanan, dan simulasi serangan.</p>
+      </div>
+      <div class="bg-purple-50 rounded-lg p-6 shadow hover:shadow-lg transition">
+        <h4 class="text-xl font-bold text-purple-700 mb-2">Big Data</h4>
+        <p class="text-sm text-gray-600">Pengolahan data besar untuk pengambilan keputusan cerdas.</p>
+      </div>
+      <div class="bg-green-50 rounded-lg p-6 shadow hover:shadow-lg transition">
+        <h4 class="text-xl font-bold text-green-700 mb-2">Game Technology</h4>
+        <p class="text-sm text-gray-600">Pengembangan game interaktif berbasis edukasi & hiburan.</p>
+      </div>
+      <div class="bg-yellow-50 rounded-lg p-6 shadow hover:shadow-lg transition">
+        <h4 class="text-xl font-bold text-yellow-700 mb-2">GIS</h4>
+        <p class="text-sm text-gray-600">Teknologi pemetaan geografis untuk berbagai sektor.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center p-6 mt-12 bg-blue-950 text-white text-sm">
+    &copy; 2025 MBC Laboratory. All rights reserved. <br>#WeAttackWeProtect
   </footer>
 </body>
 </html>
