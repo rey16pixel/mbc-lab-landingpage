@@ -3,44 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Layanan MBC Laboratory</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Layanan MBC Lab</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <h1>Layanan dan Divisi MBC Laboratory</h1>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="layanan.html">Layanan</a> |
-      <a href="kontak.php">Kontak</a> |
-      <a href="developer.html">Developer</a>
-    </nav>
+<body class="bg-gray-50 text-gray-800">
+  <header class="bg-blue-700 text-white shadow">
+    <div class="max-w-6xl mx-auto p-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">MBC Lab</h1>
+      <nav class="space-x-4">
+        <a href="index.html" class="hover:underline">Beranda</a>
+        <a href="divisi.html" class="hover:underline">Divisi</a>
+        <a href="layanan.html" class="font-semibold underline">Layanan</a>
+        <a href="kontak.php" class="hover:underline">Kontak</a>
+        <a href="developer.html" class="hover:underline">Developer</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>Cybersecurity</h2>
-      <p>Memberikan solusi keamanan digital melalui audit sistem, penetration testing, dan pelatihan keamanan siber.</p>
-    </section>
+  <section class="py-12 px-4 max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-center text-blue-700 mb-10">Layanan Unggulan MBC Lab</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+      
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-blue-600 mb-2">Cybersecurity</h3>
+        <p class="text-gray-700">Layanan keamanan siber untuk mendeteksi, menganalisis, dan mengamankan sistem dari ancaman digital. Termasuk penetration testing dan pengembangan IDS.</p>
+      </div>
 
-    <section>
-      <h2>Big Data Analytics</h2>
-      <p>Mengembangkan solusi analitik data besar untuk pengambilan keputusan berbasis data yang lebih efektif dan efisien.</p>
-    </section>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-green-600 mb-2">Big Data</h3>
+        <p class="text-gray-700">Pengolahan dan visualisasi data skala besar menggunakan tools modern seperti Hadoop, Spark, serta machine learning untuk analisis lanjutan.</p>
+      </div>
 
-    <section>
-      <h2>Game Technology</h2>
-      <p>Mendesain dan mengembangkan game edukatif, simulasi, serta teknologi interaktif lainnya.</p>
-    </section>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-purple-600 mb-2">Game Technology</h3>
+        <p class="text-gray-700">Pengembangan game 2D & 3D menggunakan Unity dan Unreal Engine, serta eksplorasi AR/VR untuk simulasi interaktif dan edukasi.</p>
+      </div>
 
-    <section>
-      <h2>Geographic Information Systems (GIS)</h2>
-      <p>Menyediakan layanan pemetaan digital, analisis spasial, dan sistem informasi geografi berbasis web.</p>
-    </section>
-  </main>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-red-600 mb-2">Geographic Information System (GIS)</h3>
+        <p class="text-gray-700">Pemrosesan data spasial untuk pemetaan, analisis geografis, dan sistem pendukung keputusan berbasis lokasi.</p>
+      </div>
 
-  <footer>
-    <p>&copy; 2025 MBC Laboratory</p>
+    </div>
+
+    <p class="text-center text-sm mt-12 text-gray-500">#WeAttackWeProtect</p>
+  </section>
+
+  <footer class="bg-gray-100 text-center py-4 text-sm text-gray-600 mt-12">
+    © 2025 MBC Laboratory. All rights reserved.
   </footer>
 </body>
 </html>
