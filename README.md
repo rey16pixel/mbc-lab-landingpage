@@ -1,68 +1,73 @@
-# 🌐 Landing Page MBC Laboratory
+# 🔬 Landing Page – MBC Laboratory
 
-Halo! Ini adalah proyek landing page yang saya buat untuk MBC Laboratory — sebuah pusat riset dan konsultan yang bergerak di bidang:
-- Cybersecurity
-- Big Data Analytics
-- Game Technology
-- Geographic Information Systems (GIS)
-
-Tujuan dari website ini adalah untuk memperkenalkan profil, layanan, serta tim pengembang dari MBC Lab secara digital dan profesional.
+Repositori ini merupakan hasil pengembangan landing page resmi **MBC (Multimedia, Big Data & Cybersecurity) Laboratory** sebagai bagian dari tugas akhir praktikum. Website ini menampilkan profil lab, bidang/divisi keahlian, layanan yang ditawarkan, serta informasi kontak yang dapat dihubungi.
 
 ---
 
-## 🧱 Struktur Halaman Website
-
-Website ini terdiri dari beberapa halaman utama:
-- `index.html`: Halaman depan (visi, misi, pengantar)
-- `layanan.html`: Penjelasan empat divisi utama
-- `kontak.php`: Formulir kontak yang terhubung ke email via PHPMailer
-- `developer.html`: Profil singkat developer
-
----
-
-## ⚙️ Teknologi yang Digunakan
-
-Frontend:
-- HTML5, CSS3
-- Sedikit JavaScript untuk interaktivitas
-- Desain responsif
-
-Backend:
-- PHP sederhana untuk proses form kontak
-- PHPMailer untuk pengiriman email via SMTP
+## 📌 Tujuan Proyek
+Membangun sebuah website informatif dan interaktif yang menampilkan:
+- Struktur divisi riset di MBC Lab
+- Layanan keahlian seperti Cybersecurity, Big Data, GIS, dan Game Technology
+- Formulir kontak aktif berbasis PHP & PHPMailer
+- Informasi lokasi, media sosial, dan branding
 
 ---
 
-## 🚀 Cara Menjalankan Secara Lokal
-
-1. Install [XAMPP](https://www.apachefriends.org/) dan aktifkan Apache
-2. Simpan folder proyek ke `htdocs`
-3. Akses melalui browser di `http://localhost/nama-folder/`
-4. Form kontak bisa langsung dicoba (jika sudah dikonfigurasi)
+## 🌐 Link Demo Online
+🖥️ Website aktif dapat diakses di:  
+🔗 **[https://mbclabpages.wuaze.com](https://mbclabpages.wuaze.com)**
 
 ---
 
-## 🔐 Keamanan
+## 📂 Struktur Proyek
+📁 mbc-lab/
+├── index.html → Halaman utama landing page
+├── divisi.html → Informasi divisi lab
+├── layanan.html → Layanan & bidang riset
+├── developer.html → Profil pengembang
+├── kontak.php → Form kontak dinamis (PHP + SMTP)
+├── phpmailer/ → Folder PHPMailer (untuk backend email)
 
-- Website ini nantinya akan di-deploy ke platform cloud (seperti Netlify atau Vercel) dengan dukungan HTTPS
-- Untuk simulasi IDS (opsional), disiapkan konfigurasi dummy menggunakan Snort/Wazuh
 
----
-
-## 📬 Form Kontak
-
-Form ini sudah menggunakan PHPMailer dan bisa mengirim email ke alamat yang telah dikonfigurasi. Kamu bisa menyesuaikan SMTP sesuai kebutuhan.
-
----
-
-## 👨‍💻 Tentang Developer
-
-Halo, saya Reysya Andika Triputra Priatna, pengembang dari proyek ini.  
-Saat ini saya sedang mendalami pengembangan web dan tertarik di bidang teknologi informasi dan keamanan siber.
-
-- 📧 Email: reysyaandikatp16@gmail.com
-- 🔗 GitHub: https://github.com/rey16pixel
+## 🧪 Teknologi yang Digunakan
+- HTML5 & TailwindCSS (CDN)
+- PHP (form backend)
+- PHPMailer (kirim email via SMTP Gmail)
+- InfinityFree (hosting & deployment gratis)
+- GitHub (version control)
 
 ---
 
-> Terima kasih sudah melihat proyek ini! Semoga bisa bermanfaat dan menjadi representasi digital yang baik untuk MBC Laboratory.
+## 📬 Kontak & Lokasi
+- 📍 **Alamat:** Jl. Telekomunikasi No.1, Terusan Buah Batu, Bandung  
+- 🏢 **Ruangan:** TULT 13.04 & TULT 11.12  
+- 📱 **Line:** @sok8073r  
+- 🌍 **Maps:** [Lihat di Google Maps](https://maps.app.goo.gl/jqiSuAbK6QLnBmqs8)  
+- 🏷️ **Hashtag:** `#WeAttackWeProtect`
+
+---
+
+## 👨‍💻 Developer
+- **Nama:** Reysya Andika Triputra Priatna  
+- **NIM:** 101032400041  
+- **Email:** reysyaandikatp16@gmail.com  
+- **GitHub:** [https://github.com/rey16pixel](https://github.com/rey16pixel)
+
+---
+
+## ✅ Checklist Penilaian Tugas
+- [x] Halaman landing index responsif
+- [x] Halaman divisi bidang keilmuan
+- [x] Halaman layanan
+- [x] Formulir kontak dinamis dengan email aktif (PHPMailer)
+- [x] Halaman profil developer
+- [x] Deploy ke InfinityFree
+- [x] SSL aktif (HTTPS)
+- [x] Alamat & Maps valid
+- [x] Struktur folder & file rapi
+- [x] Dokumentasi (README.md)
+
+---
+
+## 📄 Keterangan
+Website ini dikembangkan sebagai bagian dari **penugasan resmi Lab MBC** dan telah melalui proses desain UI, pengkodean frontend dan backend, serta deployment akhir secara daring.
